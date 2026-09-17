@@ -1,0 +1,181 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background: #e6e6ea;
+}
+
+.container{
+    display: flex;
+    gap: 30px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.card{
+    background-image: url("../images/bg\ \(1\).jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 550px;
+    height: 300px;
+    border-radius: 20px;
+    border: 2px solid white;
+    position: relative;
+    padding: 30px;
+    z-index: 1000;
+}
+
+.card::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    /* Fades from completely transparent to solid white matching the card body */
+    background: linear-gradient(
+    to bottom,
+    rgba(255, 255, 255, 0) 22%,
+    rgba(255, 255, 255, 0.3) 30%,
+    rgba(255, 255, 255, 1) 87%
+    );
+    border-radius: 18px;
+}
+
+.top i{
+    background-color: white;
+    border-radius: 50%;
+    padding: 5px 7px;
+    position: absolute;
+    top: 7%;
+    right: 6%;
+}
+
+.middle{
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    top: 20%;
+    z-index: 1000;
+}
+
+.profile-img{
+    width: 62px;
+}
+
+.profile-img img{
+    width: 100%;
+    height: 62px;
+    border-radius: 50%;
+}
+
+.profile-details{
+    color: rgb(0, 0, 0);
+}
+
+.profile-details h4{
+    font-family: sans-serif;
+    margin-top: 10px;
+}
+
+.profile-details p{
+    font-size: 12px;
+    font-family: sans-serif;
+    margin-top: 3px;
+}
+
+.skill-loc{
+    display: flex;
+    margin-top: 5px;
+    gap: 20px;
+}
+
+.skill{
+    display: flex;
+    gap: 10px;
+}
+
+.logo{
+    display: flex;
+    flex-wrap: balance;
+    align-items: center;
+    align-content: end;
+    gap: 13px;
+    color: rgb(0, 0, 0);
+}
+
+.logo-title h3{
+    font-family: sans-serif;
+    font-size: 15px;
+}
+
+.bottom{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    top: 30%;
+    color: rgb(0, 0, 0);
+    font-family: sans-serif;
+    font-size: 13px;
+    z-index: 1000;
+}
+
+.bottom h3{
+    font-size: 13px;
+}
+
+.stat{
+    display: flex;
+    gap: 30px;
+}
+
+.stat{
+    position: relative;
+}
+
+
+.star{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+}
+
+#stat1::after{
+    content: "";
+    background-color: #d0d0d0;
+    width: 1px;
+    height: 37px;
+    display: block;
+    position: absolute;
+    top: -7%;
+    left: 27%;
+}
+
+#stat2::after{
+    content: "";
+    background-color: #d0d0d0;
+    width: 1px;
+    height: 37px;
+    display: block;
+    position: absolute;
+    top: -7%;
+    right: 30%;
+}
+
+.btn button {
+    background-color: black;
+    color: white;
+    padding: 10px 28px;
+    border: none;
+    border-radius: 20px;
+    font-weight: 700;
+}
+
